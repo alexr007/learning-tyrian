@@ -1,5 +1,6 @@
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
+// https://github.com/PurpleKingdomGames/tyrian-todo
 // https://github.com/PurpleKingdomGames/tyrian
 // https://github.com/PurpleKingdomGames/tyrian/releases/tag/v0.7.0
 lazy val frontend = (project in file("frontend"))
