@@ -2,9 +2,9 @@ name: Scala CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 permissions:
   contents: write
@@ -18,3 +18,5 @@ jobs:
       uses: japgolly/setup-everything-scala@v3.1
     - name: Build and test
       run: sbt "frontend/compile"
+    - name: Upload dependency graph
+      uses: scalacenter/sbt-dependency-submission@ab086b50c947c9774b70f39fc7f6e20ca2706c91
