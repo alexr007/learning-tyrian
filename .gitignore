@@ -1,0 +1,9 @@
+node_modules
+target
+project/project
+.bloop
+.idea
+.vscode
+.bsp
+.metals
+/.pg96data/
